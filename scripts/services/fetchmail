@@ -1,0 +1,2 @@
+#!/bin/sh
+sort | uniq -c | perl -CSAD -Mutf8 -pe 's/(\d+)/$1 ×/' | sort -rn
